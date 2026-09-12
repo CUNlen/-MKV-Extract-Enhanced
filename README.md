@@ -1,13 +1,56 @@
-MKV Extract Enhanced 1.0 正式版
+# MKV Extract Enhanced
 
-本修正版专门修复 Windows 任务栏/窗口图标问题。
-1. Windows AppUserModelID 已统一为 1.0，不再沿用旧版 0.2.4 ID。
-2. PyInstaller EXE 使用 MKV_Extract_Enhanced.ico 嵌入程序图标。
-3. 关闭 UPX 压缩，避免部分 Windows 环境下 EXE 资源/图标缓存异常。
-4. QApplication、主窗口、日志窗口统一使用同一 ICO。
-5. 仍为 64 位 Python 检查 + onedir 快速启动。
+**专业 · 高效 · 简单好用的 MKV 媒体提取工具**
 
-构建：双击 01_BUILD_FINAL.bat
-运行：构建完成后进入 dist\MKV Extract Enhanced 1.0\，双击 MKV Extract Enhanced 1.0 x64.exe
+![Version](https://img.shields.io/badge/Version-1.0-ff4fa3?style=flat-square) ![64-bit](https://img.shields.io/badge/64--bit-Windows-4c9aff?style=flat-square) ![Python](https://img.shields.io/badge/Python-PySide6-3776AB?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)
 
-如果 Windows 任务栏仍显示旧图标，请先退出旧程序，再删除旧 dist 文件夹后重新构建；Windows 可能缓存旧 EXE 图标。
+> OPDAer Media Tools · 让好片更好看
+
+## ✨ 主要功能
+
+- 🚀 **极速字幕提取** — 智能解析 Matroska 结构，优先处理 S_TEXT/UTF8
+- 📦 **批量 Track** — 支持批量选择字幕、音频、视频轨道
+- 📊 **实时进度** — 提取过程实时显示，日志窗口可放大查看
+- 🔄 **自动回退** — 特殊结构自动回退到标准 `mkvextract tracks`
+- 🌐 **网络存储** — 支持本地路径以及 NAS / SMB / WebDAV 场景
+- 🪟 **Windows 64-bit** — PySide6 图形界面，专属程序图标
+- 🎬 **格式覆盖** — MKV / MKA / MKS / WEBM，以及 SRT / ASS / SSA / PGS / VobSub 等
+
+## 🖼️ 项目视觉
+
+正式 1.0 宣传海报与 GitHub 展示图位于 [`assets/`](assets/)。
+
+> 海报资源会与源码、图标、构建文件一起作为项目资产维护。
+
+## 📁 项目结构
+
+```text
+MKV-Extract-Enhanced/
+├── docs/                         # 文档与截图
+├── src/                          # 1.0 源码与 PyInstaller 配置
+├── assets/                       # 海报、图标、界面素材
+├── dist/                         # Windows 64-bit 构建产物
+├── build/                        # 构建 / 快速启动脚本
+├── LICENSE                       # MIT License
+└── README.md
+```
+
+## 🔧 构建
+
+环境：**64-bit Python 3.x + PySide6 + PyInstaller + MKVToolNix**。
+
+进入 `src/` 使用 `MKV_Extract_Enhanced_1.0.spec`，或运行 `build/01_BUILD_FINAL.bat`。
+
+构建目标：`MKV Extract Enhanced 1.0 x64`（onedir、无 UPX、内嵌 ICO）。
+
+## 📦 1.0 正式版
+
+**MKV Extract Enhanced 1.0【图标彻底修正版】 FINAL**
+
+本版本重点修复 Windows 任务栏 / 窗口图标问题，并保持 64-bit、onedir 构建方案。
+
+## 📄 License
+
+MIT License
+
+© OPDAer Media Tools
