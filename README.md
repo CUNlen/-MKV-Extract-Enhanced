@@ -3,6 +3,7 @@
 **专业 · 高效 · 简单好用的 MKV 媒体提取工具**
 
 ![Version](https://img.shields.io/badge/Version-1.0-ff4fa3?style=flat-square) ![64-bit](https://img.shields.io/badge/64--bit-Windows-4c9aff?style=flat-square) ![Python](https://img.shields.io/badge/Python-PySide6-3776AB?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)
+<img width="941" height="1672" alt="image" src="https://github.com/user-attachments/assets/a7e38a1e-aa90-4f05-9189-b2c782168fd8" />
 
 > OPDAer Media Tools · 让好片更好看
 
